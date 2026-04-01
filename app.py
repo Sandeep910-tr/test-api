@@ -10,6 +10,7 @@ def posts():
 @app.route("/comments")
 def comments():
     return jsonify(requests.get("https://jsonplaceholder.typicode.com/comments").json())
+     "status": "successfully triggered auto deployment"
 
 @app.route("/albums")
 def albums():
